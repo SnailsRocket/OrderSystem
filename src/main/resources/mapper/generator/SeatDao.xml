@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xubo.modules.generator.dao.SeatDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.xubo.modules.generator.entity.SeatEntity" id="seatMap">
+        <result property="seatId" column="seat_id"/>
+        <result property="peopleNum" column="people_num"/>
+        <result property="seatName" column="seat_name"/>
+        <result property="seatStatus" column="seat_status"/>
+    </resultMap>
+
+
+</mapper>

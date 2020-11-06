@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xubo.modules.generator.dao.MenuTopDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.xubo.modules.generator.entity.MenuTopEntity" id="menuTopMap">
+        <result property="menuTopId" column="menu_top_id"/>
+        <result property="menuId" column="menu_id"/>
+        <result property="couponMoney" column="coupon_money"/>
+        <result property="totalMoney" column="total_money"/>
+    </resultMap>
+
+
+</mapper>
