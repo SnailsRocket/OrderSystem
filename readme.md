@@ -51,3 +51,6 @@
 >   message_id user_id menu_id context create_time status
 >   status 1 未删除 0 删除
 
+
+#### 问题
+> 原型图没有画好
