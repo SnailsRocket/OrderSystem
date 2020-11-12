@@ -31,7 +31,7 @@ public class UserController {
     private UserService userService;
 
     /**
-     * 列表
+     * 查询所有的用户信息
      */
     @RequestMapping("/list")
     @RequiresPermissions("generator:user:list")
@@ -43,7 +43,7 @@ public class UserController {
 
 
     /**
-     * 信息
+     * 查询指定用户的信息
      */
     @RequestMapping("/info/{userId}")
     @RequiresPermissions("generator:user:info")
@@ -54,7 +54,7 @@ public class UserController {
     }
 
     /**
-     * 保存
+     * 保存用户
      */
     @RequestMapping("/save")
     @RequiresPermissions("generator:user:save")
@@ -65,7 +65,7 @@ public class UserController {
     }
 
     /**
-     * 修改
+     * 修改用户
      */
     @RequestMapping("/update")
     @RequiresPermissions("generator:user:update")
@@ -76,7 +76,7 @@ public class UserController {
     }
 
     /**
-     * 删除
+     * 删除用户
      */
     @RequestMapping("/delete")
     @RequiresPermissions("generator:user:delete")

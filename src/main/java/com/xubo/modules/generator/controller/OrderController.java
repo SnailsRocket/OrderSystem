@@ -16,14 +16,16 @@ import com.xubo.modules.generator.service.OrderService;
 import com.xubo.modules.generator.utils.PageUtils;
 import com.xubo.modules.generator.utils.R;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 
 /**
  * 
- *
  * @author Druid
  * @email 1837039333@qq.com
  * @date 2020-11-06 10:39:41
  */
+@Api("预订模块")
 @RestController
 @RequestMapping("generator/order")
 public class OrderController {
@@ -33,6 +35,7 @@ public class OrderController {
     /**
      * 列表
      */
+    @ApiOperation("显示所有预订的订单")
     @RequestMapping("/list")
     @RequiresPermissions("generator:order:list")
     public R list(@RequestParam Map<String, Object> params){
@@ -45,6 +48,7 @@ public class OrderController {
     /**
      * 信息
      */
+    @ApiOperation("查询单条预订的信息")
     @RequestMapping("/info/{orderId}")
     @RequiresPermissions("generator:order:info")
     public R info(@PathVariable("orderId") Integer orderId){
