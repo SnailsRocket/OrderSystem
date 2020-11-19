@@ -23,7 +23,8 @@ import com.xubo.modules.generator.utils.R;
  * @email 1837039333@qq.com
  * @date 2020-11-06 10:39:41
  * 菜品显示页
- *  menu_name money sales
+ *  menu_name money sales description image (评价另做一张表，当点击详情页的时候再去数据库里面查询,或者评论的数据丢mongoDB)
+ *  
  *
  */
 @RestController
