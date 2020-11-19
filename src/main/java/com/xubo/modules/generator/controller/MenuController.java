@@ -18,11 +18,13 @@ import com.xubo.modules.generator.utils.R;
 
 
 /**
- * 
  *
  * @author Druid
  * @email 1837039333@qq.com
  * @date 2020-11-06 10:39:41
+ * 菜品显示页
+ *  menu_name money sales
+ *
  */
 @RestController
 @RequestMapping("generator/menu")

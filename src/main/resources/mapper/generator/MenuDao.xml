@@ -10,6 +10,7 @@
         <result property="money" column="money"/>
         <result property="image" column="image"/>
         <result property="sales" column="sales"/>
+        <result property="description" column="description"></result>
     </resultMap>
 
 

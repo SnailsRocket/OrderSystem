@@ -41,5 +41,9 @@ public class MenuEntity implements Serializable {
 	 * 
 	 */
 	private Integer sales;
+    /**
+     *
+     */
+    private String description;
 
 }
