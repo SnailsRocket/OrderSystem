@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +19,8 @@ import com.xubo.modules.generator.service.ComboMenuService;
 import com.xubo.modules.generator.service.UserService;
 import com.xubo.modules.generator.utils.R;
 import com.xubo.modules.security.dto.UserDto;
+
+import io.swagger.annotations.ApiOperation;
 
 /**
  * @Author Druid_Xu
@@ -60,6 +63,13 @@ public class SecurityController {
             userService.save(userEntity);
             return R.ok().put("注册成功！",userEntity);
         }
+    }
+
+    @ApiOperation("获取验证码")
+    @GetMapping(value = "/code")
+    public R getCode() {
+
+        return R.ok();
     }
 
 }
