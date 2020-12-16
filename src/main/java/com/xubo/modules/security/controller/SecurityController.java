@@ -36,6 +36,7 @@ public class SecurityController {
         wrapper.eq("phone", userDto.getPhone());
         UserEntity user = userService.getOne(wrapper, true);
         if (user != null) {
+            // 用户已注册，返回token信息，用户携带token跳转到主页
             return R.ok().put("user", user);
         } else {
 //            执行注册操作
