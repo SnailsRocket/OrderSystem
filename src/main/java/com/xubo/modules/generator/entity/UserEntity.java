@@ -25,7 +25,7 @@ public class UserEntity implements Serializable {
 	 * 
 	 */
 	@TableId
-	private Integer userId;
+	private int userId;
 	/**
 	 * 
 	 */
@@ -45,7 +45,7 @@ public class UserEntity implements Serializable {
 	/**
 	 * 
 	 */
-	private Integer member;
+	private int member;
 	/**
 	 * 
 	 */
@@ -57,7 +57,7 @@ public class UserEntity implements Serializable {
 	/**
 	 * 
 	 */
-	private Integer isAdmin;
+	private int isAdmin;
 	/**
 	 * 
 	 */
