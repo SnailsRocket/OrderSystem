@@ -68,7 +68,7 @@ public class SecurityController {
     @ApiOperation("获取验证码")
     @GetMapping(value = "/code")
     public R getCode() {
-
+        redisConfig.set("","");
         return R.ok();
     }
 
